@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#7c3aed">
+<title>Learn English EASY</title>
+<style>
+:root{--purple:#7c3aed;--pink:#ec4899;--cyan:#06b6d4;--ink:#21143d;--muted:#716486;--bg:#fff7fd;--line:#eadcf7;--white:#fff;--mint:#e6fff6;--red:#fff0f4}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 8% 8%,#ffe1f2 0,transparent 26%),radial-gradient(circle at 92% 30%,#dffaff 0,transparent 24%),linear-gradient(160deg,#fff7fd,#f3edff 55%,#eafcff);background-size:100% 100%,100% 100%,220% 220%;animation:pageGlow 35s ease-in-out infinite alternate;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;min-height:100vh}
+header{position:relative;overflow:hidden;background:linear-gradient(125deg,#6d28d9,#a21caf,#ec4899,#0891b2,#7c3aed);background-size:300% 300%;animation:gradientDrift 22s ease-in-out infinite;color:#fff;padding:30px 18px 34px;border-radius:0 0 34px 34px;box-shadow:0 12px 30px #8b5cf633}
+header:before,header:after{content:"✦";position:absolute;color:#ffffff60;font-size:46px}
+header:before{top:12px;left:8%}header:after{bottom:8px;right:8%;font-size:30px}
+.wrap{max-width:760px;margin:auto;position:relative}
+h1{margin:0;font-size:clamp(26px,7vw,36px);direction:ltr;text-align:center;letter-spacing:-.7px;text-shadow:0 3px 0 #4c1d9566}
+header p{text-align:center;margin:10px 0 0;color:#fff2ff;font-size:14px;line-height:1.7}.byline{direction:ltr;font-weight:800;letter-spacing:1.5px;font-size:13px!important;color:#fff!important;margin-top:5px!important;text-shadow:0 1px 8px #ffffff55}
+main{padding:18px 13px 40px}
+.panel{background:#ffffffed;border:1px solid #fff;border-radius:23px;padding:17px;margin:0 auto 15px;box-shadow:0 10px 30px #6426a012,0 0 0 1px #e9d5ff66}
+label{display:block;font-weight:800;margin-bottom:9px;color:#5b21b6}
+.en{direction:ltr;text-align:left}
+textarea,input{width:100%;border:2px solid #e9d5ff;border-radius:16px;padding:14px;font:inherit;background:#fffaff;color:var(--ink);outline:none;transition:.2s}
+textarea:focus,input:focus{border-color:var(--pink);box-shadow:0 0 0 4px #ec48991c}
+textarea{min-height:104px;resize:vertical}
+.row{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
+.btn{border:0;border-radius:15px;padding:12px 16px;font:inherit;font-weight:800;cursor:pointer;transition:transform .15s,filter .15s}
+.btn:active{transform:scale(.97)}.btn:hover{filter:brightness(1.03)}
+.primary{background:linear-gradient(110deg,#7c3aed,#db2777,#0891b2,#7c3aed);background-size:220% 220%;animation:gradientDrift 16s ease-in-out infinite;color:#fff;flex:1;box-shadow:0 6px 14px #a21caf30}
+.secondary{background:#e8e4ff;color:#5b21b6}
+.danger{background:#ffe4ed;color:#be123c}
+.btn:disabled{opacity:.6;cursor:wait}
+.hint{font-size:12px;color:var(--muted);line-height:1.8;margin:11px 0 0}
+.status{font-size:13px;color:#6d28d9;margin-top:10px;line-height:1.8}
+.section-title{font-size:16px;color:#7c3aed;margin:0 0 8px;font-weight:850}
+.result-block{padding:13px 0;border-bottom:1px dashed #e4d4f6}
+.result-block:last-child{border-bottom:0;padding-bottom:0}
+.result-block p{margin:5px 0;line-height:1.9;white-space:pre-line}
+.translation{color:#49365f;line-height:1.9;white-space:pre-line}
+.tag{display:inline-block;background:linear-gradient(100deg,#fce7f3,#ede9fe);color:#86198f;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:800;margin-bottom:10px}
+.history-item{border:1px solid #eadcf7;background:linear-gradient(110deg,#fff,#fff7fc);border-radius:15px;padding:11px 12px;margin-top:9px;display:flex;align-items:center;gap:8px}
+.history-item .hist-text{flex:1;min-width:0;overflow-wrap:anywhere}
+.history-item small{display:block;color:var(--muted);margin-top:4px}
+.history-item button{flex-shrink:0}
+.empty{color:var(--muted);font-size:14px;padding:8px 0;line-height:1.8}
+.footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.9;padding:0 14px 22px}
+.ltr{direction:ltr;text-align:left}.hidden{display:none!important}
+@keyframes gradientDrift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes pageGlow{0%{background-position:0 0,100% 0,0% 50%}100%{background-position:12% 5%,88% 12%,100% 50%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+@media(max-width:420px){.panel{padding:15px;border-radius:20px}.history-item{flex-wrap:wrap}.history-item .hist-text{flex-basis:100%}.history-item button{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Learn English EASY</h1><p class="byline">by Taha Javadi</p><p>Understand English words, phrases, and sentences — step by step.</p></div></header>
+<main class="wrap">
+<section class="panel">
+  <label for="userText">کلمه، عبارت یا جملهٔ انگلیسی رو بنویس</label>
+  <textarea id="userText" class="en" placeholder="e.g. I have been studying lately." autocomplete="off"></textarea>
+  <div class="row"><button id="explainBtn" class="btn primary">Explain / توضیح بده</button><button id="clearBtn" class="btn secondary">پاک کردن</button></div>
+  <p class="hint">برای نمونه می‌تونی بنویسی: <b class="ltr">lately</b> یا <b class="ltr">I have been studying lately.</b></p>
+  <div id="status" class="status" role="status"></div>
+</section>
+<section id="result" class="panel hidden" aria-live="polite">
+  <span class="tag">نتیجه</span>
+  <h2 id="resultTitle" class="section-title ltr"></h2>
+  <div class="result-block"><h3 class="section-title">Simple English explanation</h3><p id="definition" class="ltr"></p></div>
+  <div class="result-block"><h3 class="section-title">معنی فارسی</h3><p id="persian" class="translation"></p></div>
+  <div class="result-block"><h3 class="section-title">Usage / کاربرد</h3><p id="usage" class="translation"></p></div>
+  <div class="result-block"><h3 class="section-title">Examples / مثال‌ها</h3><div id="examples"></div></div>
+</section>
+<section class="panel">
+  <div class="row" style="align-items:center;justify-content:space-between;margin-top:0">
+    <h2 class="section-title" style="margin:0">تاریخچهٔ جست‌وجوها</h2><button id="clearHistory" class="btn danger">پاک‌کردن تاریخچه</button>
+  </div>
+  <div id="historyList"></div>
+</section>
+</main>
+<div class="footer">نسخهٔ آزمایشی Learn English EASY · برای دریافت معنی‌ها به اینترنت نیاز دارد.<br>نتیجه‌ها از سرویس‌های عمومی دریافت می‌شوند و ممکن است همیشه در دسترس نباشند.</div>
+<script>
+const $ = id => document.getElementById(id);
+const HISTORY_KEY = "lee_history_v1";
+let history = loadHistory();
+function loadHistory(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||"[]")}catch(e){return []}}
+function saveHistory(){try{localStorage.setItem(HISTORY_KEY,JSON.stringify(history.slice(0,30)))}catch(e){}}
+function escapeHTML(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function setStatus(t){$("status").textContent=t}
+function showResult(item){
+  $("result").classList.remove("hidden");
+  $("resultTitle").textContent=item.input;
+  $("definition").textContent=item.definition||"No simple definition was found.";
+  $("persian").textContent=item.persian||"ترجمه‌ای دریافت نشد.";
+  $("usage").textContent=item.usage||"برای این مورد، کاربرد جداگانه‌ای پیدا نشد.";
+  const ex=$("examples"); ex.innerHTML="";
+  (item.examples||[]).forEach((x,i)=>{
+    const d=document.createElement("div");d.className="result-block";
+    d.innerHTML='<p class="ltr"><b>'+(i+1)+'. '+escapeHTML(x.en)+'</b></p><p class="translation">'+escapeHTML(x.fa||"ترجمه در دسترس نیست")+'</p>';
+    ex.appendChild(d);
+  });
+}
+function renderHistory(){
+  const el=$("historyList");el.innerHTML="";
+  if(!history.length){el.innerHTML='<p class="empty">هنوز چیزی جست‌وجو نکردی. اولین کلمه‌ات رو بالا بنویس.</p>';return}
+  history.forEach((item,i)=>{
+    const row=document.createElement("div");row.className="history-item";
+    const txt=document.createElement("div");txt.className="hist-text";
+    const title=document.createElement("b");title.className="ltr";title.textContent=item.input;
+    const small=document.createElement("small");small.textContent=new Date(item.time).toLocaleString();
+    txt.append(title,small);
+    const open=document.createElement("button");open.className="btn secondary";open.textContent="بازکردن";open.onclick=()=>showResult(item);
+    const del=document.createElement("button");del.className="btn danger";del.textContent="حذف";del.onclick=()=>{history.splice(i,1);saveHistory();renderHistory()};
+    row.append(txt,open,del);el.appendChild(row);
+  });
+}
+async function translate(text){
+  const url="https://api.mymemory.translated.net/get?q="+encodeURIComponent(text)+"&langpair=en|fa";
+  const r=await fetch(url);if(!r.ok)throw new Error("ترجمه در دسترس نیست");
+  const j=await r.json();return j?.responseData?.translatedText||"";
+}
+async function getDictionary(word){
+  const r=await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/"+encodeURIComponent(word));
+  if(!r.ok)throw new Error("تعریف پیدا نشد");
+  const j=await r.json();return j[0];
+}
+function pickExamples(entry){
+  const out=[];for(const m of (entry.meanings||[])){for(const d of (m.definitions||[])){if(d.example&&!out.some(x=>x.en===d.example))out.push({en:d.example,fa:""})}}
+  return out.slice(0,2);
+}
+async function explain(){
+  const input=$("userText").value.trim();
+  if(!input){setStatus("اول یک کلمه، عبارت یا جمله بنویس.");$("userText").focus();return}
+  $("explainBtn").disabled=true;setStatus("در حال دریافت معنی و ترجمه…");$("result").classList.add("hidden");
+  try{
+    let definition="",usage="",examples=[],usageIsEnglish=false;
+    // The public dictionary API is word-oriented. For phrases/sentences we still translate the whole input.
+    if(/^[a-zA-Z]+(?:[-'][a-zA-Z]+)*$/.test(input)){
+      try{
+        const entry=await getDictionary(input);
+        const meanings=entry.meanings||[];
+        definition=meanings.slice(0,2).map(m=>m.partOfSpeech+": "+(m.definitions||[]).slice(0,2).map(d=>d.definition).join("; ")).join("\n");
+        usage=meanings.slice(0,2).map(m=>m.partOfSpeech+": "+(m.definitions||[]).slice(0,1).map(d=>d.definition).join("")).join("\n");
+        usageIsEnglish=!!usage;
+        examples=pickExamples(entry);
+      }catch(e){definition="A dictionary definition wasn't available for this input. Try a common English word or phrase."}
+    } else {
+      definition="This is a phrase or sentence. The translation below can help you understand its meaning. A full AI explanation is not connected in this prototype yet.";
+      usage="برای فهم دقیق‌تر جمله، به زمان فعل، عبارت‌های کلیدی و بافت جمله توجه کن. توضیح هوش مصنوعی در این نسخه هنوز متصل نشده است.";
+    }
+    const persian=await translate(input).catch(()=> "ترجمه از سرویس عمومی دریافت نشد. ممکن است سرویس در دسترس نباشد.");
+    if(!examples.length && input.split(/\s+/).length>1)examples=[{en:input,fa:persian}];
+    for(const ex of examples){if(!ex.fa)ex.fa=await translate(ex.en).catch(()=> "ترجمه در دسترس نیست");}
+    if(usageIsEnglish){const usageFa=await translate(usage).catch(()=> "ترجمهٔ فارسیِ کاربرد از سرویس دریافت نشد.");usage += "\n\nترجمهٔ فارسیِ کاربرد:\n"+usageFa;}
+    const item={input,definition,persian,usage,examples,time:Date.now()};
+    showResult(item);history=[item,...history.filter(x=>x.input.toLowerCase()!==input.toLowerCase())].slice(0,30);saveHistory();renderHistory();
+    setStatus("نتیجه آماده شد. توجه: این نسخه از فرهنگ لغت و سرویس ترجمه استفاده می‌کند، نه مدل هوش مصنوعی مولد.");
+  }catch(e){
+    setStatus("نتونستم به سرویس معنی/ترجمه وصل بشم. اینترنت رو بررسی کن یا بعداً دوباره امتحان کن. تاریخچهٔ ذخیره‌شده همچنان روی همین مرورگر می‌مونه.");
+  }finally{$("explainBtn").disabled=false}
+}
+$("explainBtn").addEventListener("click",explain);
+$("clearBtn").addEventListener("click",()=>{$("userText").value="";setStatus("");$("userText").focus()});
+$("clearHistory").addEventListener("click",()=>{if(confirm("همهٔ تاریخچه پاک شود؟")){history=[];saveHistory();renderHistory()}});
+$("userText").addEventListener("keydown",e=>{if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)){explain()}});
+renderHistory();
+</script>
+</body>
+</html>
